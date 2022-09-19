@@ -9,7 +9,7 @@
   <p *ngIf="loading" class="text-center text-lg">Loading...</p>
   <div *ngIf="productService.products">
     <app-product
-      *ngFor="let product of productService.products | filterProducts: term;"
+      *ngFor="let product of productService.products"
       [product]="product"
     ></app-product>
   </div>
